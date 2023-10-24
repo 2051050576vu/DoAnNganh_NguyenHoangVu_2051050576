@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+form{
+    border: 1px solid #dadce0;
+    border-radius: 5px;
+    padding: 30px;
+}
+h3{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+.form-group{
+    margin-bottom: 15px;
+    position: relative;
+}
+input[type="password"],
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+input[type="number"]
+{
+    height: 50px;
+    width: 300px;
+    outline: none;
+    border: 1px solid #dadce0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: inherit;
+    color: #202124;
+    transition: all 0.3s ease-in-out;
+}
+label{
+    position: absolute;
+    padding: 0px 5px;
+    left: 5px;
+    top: 50%;
+    /* Quan trọng  */
+    pointer-events: none;
+    transform: translateY(-50%);
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.form-group input:focus {
+    border: 2px solid #1a73e8;
+}
+.form-group input:focus + label, .form-group input:valid + label{
+    top: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a73e8;
+}
+input#btn-login{
+    background: #1a73e8;
+    color: #fff;
+    cursor: pointer;
+}
+input#btn-login:hover{
+    opacity: 0.85;
+}
+.pass{
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+}
+.pass h2{
+    font-size: 18px;
+    color: #333;
+}
+.signup{
+    text-align: center;
+    padding-top: 15px;
+}
+.signup a{
+
+    color: #999999;
+    font-weight: bold;
+}
+.signup:hover a{
+    color: #DD0000;
+    transition: 0.3s;
+}
